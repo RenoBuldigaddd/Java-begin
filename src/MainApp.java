@@ -8,7 +8,8 @@ public class MainApp {
 		//ArrayList();
 		//ArrayListModivy();
 		//ArrayToArrayList();
-		SearchSortArrayList();
+		//SearchSortArrayList();
+		ArrayListCustomObject();
 		}
 	
 	private static void ArrayList() {
@@ -48,7 +49,7 @@ public class MainApp {
 		System.out.println(lst); // [alpha88, beta88, charlie88]
 	}
 	
-	public static void ArrayToArrayList() {
+	private static void ArrayToArrayList() {
 		String[] strs = { "alpha", "beta", "charlie" };
 		System.out.println(Arrays.toString(strs)); // [alpha, beta, charlie]
 
@@ -66,7 +67,7 @@ public class MainApp {
 		System.out.println(lstInt); // [22, 44, 11, 33]
 		}
 	
-	public static void SearchSortArrayList() {
+	private static void SearchSortArrayList() {
 	     // Sort and search an "array" of Strings
 	     String[] array = {"Hello", "hello", "Hi", "HI"};
 
@@ -88,5 +89,14 @@ public class MainApp {
 	     System.out.println(lst);  // [11, 22, 33, 44]
 	     System.out.println(Collections.binarySearch(lst, 22)); // 1
 	     System.out.println(Collections.binarySearch(lst, 35)); // -4 (insertion at index 3)
+	}
+
+	private static void ArrayListCustomObject()
+	{
+		List<Car> cars = new ArrayList<Car>();
+		cars.add(new Car("Skoda Fabia","Green", 12000));
+		
+		Car c = cars.get(0);
+		c.Show();
 	}
 }

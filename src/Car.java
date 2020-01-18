@@ -29,7 +29,7 @@ public class Car implements ShowInfo{
 	}
 	@Override
 	public void Show() {
-		System.out.printf("Name: %s\tColor: %s\tPrice: %d\n", name, color, price);
+		System.out.printf("Name: %s\tColor: %s\tPrice: %f\n", name, color, price);
 		
 	}
 	
