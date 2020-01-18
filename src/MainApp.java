@@ -9,7 +9,11 @@ public class MainApp {
 		//ArrayListModivy();
 		//ArrayToArrayList();
 		//SearchSortArrayList();
-		ArrayListCustomObject();
+		//ArrayListCustomObject();
+		Engine engine = new EngineBMW();
+		
+		Car car = new Car("Beha","Black", 1000000, engine);
+		car.Show();
 		}
 	
 	private static void ArrayList() {
@@ -91,12 +95,23 @@ public class MainApp {
 	     System.out.println(Collections.binarySearch(lst, 35)); // -4 (insertion at index 3)
 	}
 
-	private static void ArrayListCustomObject()
-	{
-		List<Car> cars = new ArrayList<Car>();
-		cars.add(new Car("Skoda Fabia","Green", 12000));
-		
-		Car c = cars.get(0);
-		c.Show();
-	}
+	//private static void ArrayListCustomObject() {
+
+		//List<Car> cars = new ArrayList<Car>();
+		//cars.add(new Car("Skoda Fabia", "Green", 120000));
+		//cars.add(new Car("Bugatti", "Blue", 12000000));
+		//cars.add(new Car("Zuhuli", "White", 28000));
+		//for (Car car : cars) {
+		//car.Show();
+		//}
+		//Collections.sort(cars, new SortbyPrice());
+
+		//for (Car car : cars) {
+		//car.Show();
+	//	}
+
+		//}
+	
+	
 }
+
